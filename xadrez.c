@@ -17,30 +17,31 @@ int main() {
     printf("Xadrez\n");
     printf("--------\n");
 
-    //movimentacao da torre, 5 casas para direita
+    // Movimentação da torre, 5 casas para direita
     printf("Torre\n");
-    for (int i = 0; i < torre; i++)
-    {
-        printf("Direita\n");
+    for (int i = 0; i < torre; i++) {
+        for (int j = 0; j < 1; j++) { // Loop aninhado
+            printf("Direita\n");
+        }
     }
 
-    //movimentacao da rainha, 8 casas para esquerda
+    // Movimentação da rainha, 8 casas para esquerda
     printf("Rainha\n");
     int j = 0;
-    while (j < rainha)
-    {
-        printf("esquerda\n");
+    while (j < rainha) {
+        for (int k = 0; k < 1; k++) { // Loop aninhado
+            printf("Esquerda\n");
+        }
         j++;
     }
 
-    //movimentacao do bispo, 5 casas na diagonal ( cima e direita)
+    // Movimentação do bispo, 5 casas na diagonal (cima e direita)
     printf("Bispo\n");
-    int k = 0;
-    do
-    {
-        printf("cima, direta\n");
-        k++;
-    } while (k < bispo);
+    for (int k = 0; k < bispo; k++) {
+        for (int l = 0; l < 1; l++) { // Loop aninhado
+            printf("Cima, Direita\n");
+        }
+    }
 
     // Separando a movimentação do Cavalo com uma linha em branco
     printf("\n");
@@ -48,18 +49,19 @@ int main() {
     // Movimentação do Cavalo, 2 casas para baixo e 1 casa para a esquerda
     printf("Cavalo\n");
     for (int i = 0; i < cavaloBaixo; i++) {
-        printf("Baixo\n");
+        for (int m = 0; m < 1; m++) { // Loop aninhado
+            printf("Baixo\n");
+        }
     }
 
     // Usando um loop while para simular o movimento para a esquerda
     int l = 0;
     while (l < cavaloEsquerda) {
-        printf("Esquerda\n");
+        for (int n = 0; n < 1; n++) { // Loop aninhado
+            printf("Esquerda\n");
+        }
         l++;
     }
-    
-
-
 
     return 0;
 }
